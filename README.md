@@ -18,7 +18,74 @@ composer require decodelabs/tightrope
 
 ## Usage
 
-Coming soon...
+Tightrope defines a number of reusable interfaces that represent a property of an object, such as being disableable, readable or requirable:
+
+```php
+namespace DecodeLabs\Tightrope;
+
+interface Nullable {
+    public function isNullable(): bool;
+}
+```
+
+It also supplies a _manifest_ version of each interface along with a trait implementation:
+
+```php
+namespace DecodeLabs\Tightrope\Manifest;
+
+use DecodeLabs\Tightrope\Nullable as BaseNullable;
+
+interface Nullable extends BaseNullable {
+    public function setNullable(bool $flag): static;
+}
+```
+
+You can use these interfaces to define properties of your objects:
+
+```php
+namespace My\Project;
+
+use DecodeLabs\Exceptional;
+use DecodeLabs\Tightrope\Manifest\Nullable;
+use DecodeLabs\Tightrope\Manifest\NullableTrait;
+
+class MyClass implements Nullable {
+
+    use NullableTrait;
+
+    public function doSomething(?string $value): void {
+        if(
+            !$this->isNullable() &&
+            $value === null
+        ) {
+            throw Exceptional::InvalidArgument('Value cannot be null');
+        }
+
+        // ...
+    }
+}
+
+$myObject = new MyClass();
+
+$myObject->setNullable(true);
+$myObject->doSomething(null); // Fine
+
+$myObject->setNullable(false);
+$myObject->doSomething(null); // Not fine
+```
+
+## Available properties
+
+The following interfaces are currently available:
+
+- Disableable
+- Immutable
+- Nullable
+- Readable
+- ReadOnlyable
+- Requirable
+- Writable
+
 
 ## Licensing
 Tightrope is licensed under the MIT License. See [LICENSE](./LICENSE) for the full license text.
