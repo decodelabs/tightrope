@@ -33,9 +33,9 @@ It also supplies a _manifest_ version of each interface along with a trait imple
 ```php
 namespace DecodeLabs\Tightrope\Manifest;
 
-use DecodeLabs\Tightrope\Nullable as BaseNullable;
+use DecodeLabs\Tightrope\Nullable as StaticNullable;
 
-interface Nullable extends BaseNullable {
+interface Nullable extends StaticNullable {
     public function setNullable(bool $flag): static;
 }
 ```
