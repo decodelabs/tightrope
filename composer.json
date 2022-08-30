@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DecodeLabs\\Tightrope\\": "src/Tightrope"
+            "DecodeLabs\\Tightrope\\": "src/"
         }
     },
     "extra": {
