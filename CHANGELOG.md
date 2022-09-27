@@ -1,3 +1,5 @@
+* Updated composer check script
+
 ## v0.1.1 (2022-08-30)
 * Fixed composer loader
 
