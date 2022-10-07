@@ -7,7 +7,13 @@
 [![PHPStan](https://img.shields.io/badge/PHPStan-enabled-44CC11.svg?longCache=true&style=flat)](https://github.com/phpstan/phpstan)
 [![License](https://img.shields.io/packagist/l/decodelabs/tightrope?style=flat)](https://packagist.org/packages/decodelabs/tightrope)
 
-Reusable constraints for your PHP classes.
+### Reusable constraints for your PHP classes.
+
+Tightrope is a middleware package that provides library developers with a set of reusable semantic constraints.
+
+_Get news and updates on the [DecodeLabs blog](https://blog.decodelabs.com)._
+
+---
 
 
 ## Installation
