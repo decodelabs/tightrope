@@ -1,3 +1,8 @@
+## v0.1.2 (2023-09-26)
+* Migrated to use effigy in CI workflow
+* Fixed PHP8.1 testing
+* Updated composer check script
+
 ## v0.1.1 (2022-08-30)
 * Fixed composer loader
 
