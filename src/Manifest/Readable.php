@@ -16,5 +16,7 @@ interface Readable extends StaticReadable
     /**
      * @return $this
      */
-    public function setReadable(bool $readable): static;
+    public function setReadable(
+        bool $readable
+    ): static;
 }

@@ -26,8 +26,9 @@ trait ReadableTrait
      *
      * @return $this
      */
-    public function setReadable(bool $readable): static
-    {
+    public function setReadable(
+        bool $readable
+    ): static {
         $this->readable = $readable;
         return $this;
     }

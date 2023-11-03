@@ -16,5 +16,7 @@ interface Writable extends StaticWritable
     /**
      * @return $this
      */
-    public function setWritable(bool $writable): static;
+    public function setWritable(
+        bool $writable
+    ): static;
 }

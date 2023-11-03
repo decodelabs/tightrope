@@ -26,8 +26,9 @@ trait NullableTrait
      *
      * @return $this
      */
-    public function setNullable(bool $nullable): static
-    {
+    public function setNullable(
+        bool $nullable
+    ): static {
         $this->nullable = $nullable;
         return $this;
     }

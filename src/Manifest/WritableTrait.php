@@ -26,8 +26,9 @@ trait WritableTrait
      *
      * @return $this
      */
-    public function setWritable(bool $writable): static
-    {
+    public function setWritable(
+        bool $writable
+    ): static {
         $this->writable = $writable;
         return $this;
     }

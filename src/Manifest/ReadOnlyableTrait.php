@@ -26,8 +26,9 @@ trait ReadOnlyableTrait
      *
      * @return $this
      */
-    public function setReadOnly(bool $readOnly): static
-    {
+    public function setReadOnly(
+        bool $readOnly
+    ): static {
         $this->readOnly = $readOnly;
         return $this;
     }

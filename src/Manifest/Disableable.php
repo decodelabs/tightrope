@@ -16,5 +16,7 @@ interface Disableable extends StaticDisableable
     /**
      * @return $this
      */
-    public function setDisabled(bool $disabled): static;
+    public function setDisabled(
+        bool $disabled
+    ): static;
 }

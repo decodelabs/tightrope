@@ -16,5 +16,7 @@ interface Immutable extends StaticImmutable
     /**
      * @return $this
      */
-    public function setImmutable(bool $immutable): static;
+    public function setImmutable(
+        bool $immutable
+    ): static;
 }

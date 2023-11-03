@@ -16,5 +16,7 @@ interface Requirable extends StaticRequirable
     /**
      * @return $this
      */
-    public function setRequired(bool $required): static;
+    public function setRequired(
+        bool $required
+    ): static;
 }

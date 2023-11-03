@@ -26,8 +26,9 @@ trait RequirableTrait
      *
      * @return $this
      */
-    public function setRequired(bool $required): static
-    {
+    public function setRequired(
+        bool $required
+    ): static {
         $this->required = $required;
         return $this;
     }

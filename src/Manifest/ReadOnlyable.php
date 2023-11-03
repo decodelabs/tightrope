@@ -16,5 +16,7 @@ interface ReadOnlyable extends StaticReadOnlyable
     /**
      * @return $this
      */
-    public function setReadOnly(bool $readOnly): static;
+    public function setReadOnly(
+        bool $readOnly
+    ): static;
 }

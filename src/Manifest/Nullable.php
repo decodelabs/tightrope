@@ -16,5 +16,7 @@ interface Nullable extends StaticNullable
     /**
      * @return $this
      */
-    public function setNullable(bool $nullable): static;
+    public function setNullable(
+        bool $nullable
+    ): static;
 }

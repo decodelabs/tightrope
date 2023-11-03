@@ -26,8 +26,9 @@ trait ImmutableTrait
      *
      * @return $this
      */
-    public function setImmutable(bool $immutable): static
-    {
+    public function setImmutable(
+        bool $immutable
+    ): static {
         $this->immutable = $immutable;
         return $this;
     }
