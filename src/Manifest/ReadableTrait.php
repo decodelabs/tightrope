@@ -9,6 +9,9 @@ declare(strict_types=1);
 
 namespace DecodeLabs\Tightrope\Manifest;
 
+/**
+ * @phpstan-require-implements Readable
+ */
 trait ReadableTrait
 {
     protected bool $readable = false;

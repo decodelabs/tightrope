@@ -9,6 +9,9 @@ declare(strict_types=1);
 
 namespace DecodeLabs\Tightrope\Manifest;
 
+/**
+ * @phpstan-require-implements ReadOnlyable
+ */
 trait ReadOnlyableTrait
 {
     protected bool $readOnly = false;

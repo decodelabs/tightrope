@@ -9,6 +9,9 @@ declare(strict_types=1);
 
 namespace DecodeLabs\Tightrope\Manifest;
 
+/**
+ * @phpstan-require-implements Nullable
+ */
 trait NullableTrait
 {
     protected bool $nullable = false;

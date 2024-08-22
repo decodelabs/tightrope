@@ -9,6 +9,9 @@ declare(strict_types=1);
 
 namespace DecodeLabs\Tightrope\Manifest;
 
+/**
+ * @phpstan-require-implements Immutable
+ */
 trait ImmutableTrait
 {
     protected bool $immutable = false;
