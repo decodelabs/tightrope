@@ -7,11 +7,14 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Tightrope\Manifest;
+namespace DecodeLabs\Tightrope;
 
-trait ImmutableTrait
+/**
+ * @phpstan-require-implements ImmutableSet
+ */
+trait ImmutableSetTrait
 {
-    protected bool $immutable = false;
+    public bool $immutable = false;
 
     /**
      * Is this immutable?
@@ -26,8 +29,9 @@ trait ImmutableTrait
      *
      * @return $this
      */
-    public function setImmutable(bool $immutable): static
-    {
+    final public function setImmutable(
+        bool $immutable
+    ): static {
         $this->immutable = $immutable;
         return $this;
     }

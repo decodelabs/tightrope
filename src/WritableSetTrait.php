@@ -7,11 +7,14 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Tightrope\Manifest;
+namespace DecodeLabs\Tightrope;
 
-trait WritableTrait
+/**
+ * @phpstan-require-implements WritableSet
+ */
+trait WritableSetTrait
 {
-    protected bool $writable = false;
+    public bool $writable = false;
 
     /**
      * Is this writable?
@@ -26,8 +29,9 @@ trait WritableTrait
      *
      * @return $this
      */
-    public function setWritable(bool $writable): static
-    {
+    final public function setWritable(
+        bool $writable
+    ): static {
         $this->writable = $writable;
         return $this;
     }

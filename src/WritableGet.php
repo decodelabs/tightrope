@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace DecodeLabs\Tightrope;
 
-interface Immutable
+interface WritableGet
 {
-    public function isImmutable(): bool;
+    public function isWritable(): bool;
 }

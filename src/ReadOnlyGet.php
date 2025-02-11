@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace DecodeLabs\Tightrope;
 
-interface Requirable
+interface ReadOnlyGet
 {
-    public function isRequired(): bool;
+    public function isReadOnly(): bool;
 }

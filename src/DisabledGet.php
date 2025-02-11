@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace DecodeLabs\Tightrope;
 
-interface Writable
+interface DisabledGet
 {
-    public function isWritable(): bool;
+    public function isDisabled(): bool;
 }

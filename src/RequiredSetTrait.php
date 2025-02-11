@@ -7,11 +7,14 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Tightrope\Manifest;
+namespace DecodeLabs\Tightrope;
 
-trait RequirableTrait
+/**
+ * @phpstan-require-implements RequiredSet
+ */
+trait RequiredSetTrait
 {
-    protected bool $required = false;
+    public bool $required = false;
 
     /**
      * Is this required?
@@ -26,8 +29,9 @@ trait RequirableTrait
      *
      * @return $this
      */
-    public function setRequired(bool $required): static
-    {
+    final public function setRequired(
+        bool $required
+    ): static {
         $this->required = $required;
         return $this;
     }

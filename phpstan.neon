@@ -3,3 +3,7 @@ parameters:
         - src/
         - tests/
     level: max
+
+    excludePaths:
+        # Remove once PHPStan fixes issue with traits
+        - '*Trait.php'
