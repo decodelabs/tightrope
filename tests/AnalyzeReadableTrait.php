@@ -15,4 +15,9 @@ use DecodeLabs\Tightrope\ReadableSetTrait;
 class AnalyzeReadableTrait implements ReadableSet
 {
     use ReadableSetTrait;
+
+    public function testReadable(): bool
+    {
+        return $this->readable;
+    }
 }

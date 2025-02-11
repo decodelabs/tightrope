@@ -15,4 +15,9 @@ use DecodeLabs\Tightrope\WritableSetTrait;
 class AnalyzeWritableTrait implements WritableSet
 {
     use WritableSetTrait;
+
+    public function getWritable(): bool
+    {
+        return $this->writable;
+    }
 }

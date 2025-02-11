@@ -15,4 +15,9 @@ use DecodeLabs\Tightrope\NullableSetTrait;
 class AnalyzeNullableTrait implements NullableSet
 {
     use NullableSetTrait;
+
+    public function testNullable(): bool
+    {
+        return $this->nullable;
+    }
 }

@@ -15,4 +15,8 @@ use DecodeLabs\Tightrope\DisabledSetTrait;
 class AnalyzeDisabledTrait implements DisabledSet
 {
     use DisabledSetTrait;
+
+    public function testDisabled(): bool {
+        return $this->disabled;
+    }
 }

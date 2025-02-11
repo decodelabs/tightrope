@@ -15,4 +15,9 @@ use DecodeLabs\Tightrope\ImmutableSetTrait;
 class AnalyzeImmutableTrait implements ImmutableSet
 {
     use ImmutableSetTrait;
+
+    public function testImmutable(): bool
+    {
+        return $this->immutable;
+    }
 }

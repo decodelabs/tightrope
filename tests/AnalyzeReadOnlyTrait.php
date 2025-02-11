@@ -15,4 +15,9 @@ use DecodeLabs\Tightrope\ReadOnlySetTrait;
 class AnalyzeReadOnlyTrait implements ReadOnlySet
 {
     use ReadOnlySetTrait;
+
+    public function testReadOnly(): bool
+    {
+        return $this->readOnly;
+    }
 }

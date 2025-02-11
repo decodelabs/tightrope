@@ -15,4 +15,9 @@ use DecodeLabs\Tightrope\RequiredSetTrait;
 class AnalyzeRequiredTrait implements RequiredSet
 {
     use RequiredSetTrait;
+
+    public function testRequired(): bool
+    {
+        return $this->required;
+    }
 }
