@@ -7,12 +7,12 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Tightrope\Manifest;
+namespace DecodeLabs\Tightrope;
 
-use DecodeLabs\Tightrope\Immutable as StaticImmutable;
-
-interface Immutable extends StaticImmutable
+interface ImmutableSet extends ImmutableGet
 {
+    public bool $immutable { get; set; }
+
     /**
      * @return $this
      */

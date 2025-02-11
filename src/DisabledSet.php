@@ -7,12 +7,12 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Tightrope\Manifest;
+namespace DecodeLabs\Tightrope;
 
-use DecodeLabs\Tightrope\Disableable as StaticDisableable;
-
-interface Disableable extends StaticDisableable
+interface DisabledSet extends DisabledGet
 {
+    public bool $disabled { get; set; }
+
     /**
      * @return $this
      */

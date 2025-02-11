@@ -7,12 +7,12 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Tightrope\Manifest;
+namespace DecodeLabs\Tightrope;
 
-use DecodeLabs\Tightrope\ReadOnlyable as StaticReadOnlyable;
-
-interface ReadOnlyable extends StaticReadOnlyable
+interface ReadOnlySet extends ReadOnlyGet
 {
+    public bool $readOnly { get; set; }
+
     /**
      * @return $this
      */

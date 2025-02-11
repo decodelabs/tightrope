@@ -7,12 +7,12 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Tightrope\Manifest;
+namespace DecodeLabs\Tightrope;
 
-use DecodeLabs\Tightrope\Nullable as StaticNullable;
-
-interface Nullable extends StaticNullable
+interface NullableSet extends NullableGet
 {
+    public bool $nullable { get; set; }
+
     /**
      * @return $this
      */

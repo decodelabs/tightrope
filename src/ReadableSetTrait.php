@@ -7,14 +7,14 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Tightrope\Manifest;
+namespace DecodeLabs\Tightrope;
 
 /**
- * @phpstan-require-implements Readable
+ * @phpstan-require-implements ReadableSet
  */
-trait ReadableTrait
+trait ReadableSetTrait
 {
-    protected bool $readable = false;
+    public bool $readable = false;
 
     /**
      * Is this readable?
@@ -29,7 +29,7 @@ trait ReadableTrait
      *
      * @return $this
      */
-    public function setReadable(
+    final public function setReadable(
         bool $readable
     ): static {
         $this->readable = $readable;

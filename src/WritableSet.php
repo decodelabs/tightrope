@@ -7,12 +7,12 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Tightrope\Manifest;
+namespace DecodeLabs\Tightrope;
 
-use DecodeLabs\Tightrope\Writable as StaticWritable;
-
-interface Writable extends StaticWritable
+interface WritableSet extends WritableGet
 {
+    public bool $writable { get; set; }
+
     /**
      * @return $this
      */

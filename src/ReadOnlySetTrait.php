@@ -7,14 +7,14 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Tightrope\Manifest;
+namespace DecodeLabs\Tightrope;
 
 /**
- * @phpstan-require-implements ReadOnlyable
+ * @phpstan-require-implements ReadOnlySet
  */
-trait ReadOnlyableTrait
+trait ReadOnlySetTrait
 {
-    protected bool $readOnly = false;
+    public bool $readOnly = false;
 
     /**
      * Is this read only?
@@ -29,7 +29,7 @@ trait ReadOnlyableTrait
      *
      * @return $this
      */
-    public function setReadOnly(
+    final public function setReadOnly(
         bool $readOnly
     ): static {
         $this->readOnly = $readOnly;

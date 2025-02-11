@@ -9,10 +9,10 @@ declare(strict_types=1);
 
 namespace DecodeLabs\Tightrope\Tests;
 
-use DecodeLabs\Tightrope\Manifest\Nullable;
-use DecodeLabs\Tightrope\Manifest\NullableTrait;
+use DecodeLabs\Tightrope\NullableSet;
+use DecodeLabs\Tightrope\NullableSetTrait;
 
-class AnalyzeNullableTrait implements Nullable
+class AnalyzeNullableTrait implements NullableSet
 {
-    use NullableTrait;
+    use NullableSetTrait;
 }

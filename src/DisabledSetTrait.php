@@ -7,14 +7,14 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Tightrope\Manifest;
+namespace DecodeLabs\Tightrope;
 
 /**
- * @phpstan-require-implements Disableable
+ * @phpstan-require-implements DisabledSet
  */
-trait DisableableTrait
+trait DisabledSetTrait
 {
-    protected bool $disabled = false;
+    public bool $disabled = false;
 
     /**
      * Is this disabled?
@@ -29,7 +29,7 @@ trait DisableableTrait
      *
      * @return $this
      */
-    public function setDisabled(
+    final public function setDisabled(
         bool $disabled
     ): static {
         $this->disabled = $disabled;

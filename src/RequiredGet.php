@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace DecodeLabs\Tightrope;
 
-interface Disableable
+interface RequiredGet
 {
-    public function isDisabled(): bool;
+    public function isRequired(): bool;
 }

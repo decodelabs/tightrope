@@ -7,14 +7,14 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Tightrope\Manifest;
+namespace DecodeLabs\Tightrope;
 
 /**
- * @phpstan-require-implements Nullable
+ * @phpstan-require-implements NullableSet
  */
-trait NullableTrait
+trait NullableSetTrait
 {
-    protected bool $nullable = false;
+    public bool $nullable = false;
 
     /**
      * Is this nullable?
@@ -29,7 +29,7 @@ trait NullableTrait
      *
      * @return $this
      */
-    public function setNullable(
+    final public function setNullable(
         bool $nullable
     ): static {
         $this->nullable = $nullable;

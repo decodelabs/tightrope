@@ -7,12 +7,12 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Tightrope\Manifest;
+namespace DecodeLabs\Tightrope;
 
-use DecodeLabs\Tightrope\Readable as StaticReadable;
-
-interface Readable extends StaticReadable
+interface ReadableSet extends ReadableGet
 {
+    public bool $readable { get; set; }
+
     /**
      * @return $this
      */

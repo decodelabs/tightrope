@@ -7,12 +7,12 @@
 
 declare(strict_types=1);
 
-namespace DecodeLabs\Tightrope\Manifest;
+namespace DecodeLabs\Tightrope;
 
-use DecodeLabs\Tightrope\Requirable as StaticRequirable;
-
-interface Requirable extends StaticRequirable
+interface RequiredSet extends RequiredGet
 {
+    public bool $required { get; set; }
+
     /**
      * @return $this
      */

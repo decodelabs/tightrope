@@ -1,5 +1,9 @@
+## v0.2.0 (2025-02-11)
+* Restructured interfaces
+* Added property hooks to settable implementations
 * Added @phpstan-require-implements constraints
-* Made PHP8.1 minimum version
+* Upgraded PHPStan to v2
+* Made PHP8.4 minimum version
 * Added PHP8.4 to CI workflow
 
 ## v0.1.2 (2023-09-26)

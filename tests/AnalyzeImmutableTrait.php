@@ -9,10 +9,10 @@ declare(strict_types=1);
 
 namespace DecodeLabs\Tightrope\Tests;
 
-use DecodeLabs\Tightrope\Manifest\Immutable;
-use DecodeLabs\Tightrope\Manifest\ImmutableTrait;
+use DecodeLabs\Tightrope\ImmutableSet;
+use DecodeLabs\Tightrope\ImmutableSetTrait;
 
-class AnalyzeImmutableTrait implements Immutable
+class AnalyzeImmutableTrait implements ImmutableSet
 {
-    use ImmutableTrait;
+    use ImmutableSetTrait;
 }
