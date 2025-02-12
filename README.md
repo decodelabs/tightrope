@@ -64,7 +64,9 @@ class MyClass implements Nullable {
             !$this->isNullable() &&
             $value === null
         ) {
-            throw Exceptional::InvalidArgument('Value cannot be null');
+            throw Exceptional::InvalidArgument(
+                message: 'Value cannot be null'
+            );
         }
 
         // ...
