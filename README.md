@@ -11,8 +11,6 @@
 
 Tightrope is a middleware package that provides library developers with a set of reusable semantic constraints.
 
-_Get news and updates on the [DecodeLabs blog](https://blog.decodelabs.com)._
-
 ---
 
 
