@@ -9,7 +9,7 @@
 
 ### Reusable constraints for your PHP classes.
 
-Tightrope is a middleware package that provides library developers with a set of reusable semantic constraints.
+**Note**: With the introduction of properties in PHP8.4, the need for Tightrope has diminished. This package is now deprecated and will not be maintained. You can use the built-in property types and visibility modifiers to achieve similar functionality, without methods.
 
 ---
 
